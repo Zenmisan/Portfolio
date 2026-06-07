@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { ExternalLink, Github, FileCode, X, ChevronRight } from "lucide-react";
+import { ExternalLink, Github, X, ChevronRight } from "lucide-react";
 import { createPortal } from "react-dom";
 import { projects, Project } from "@/data/projects";
 import { useTheme } from "@/hooks/useTheme";
@@ -168,7 +168,7 @@ export function InteractiveProjects() {
         <SectionTitle text="PROJECTS" />
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {projects.map((project, index) => (
+          {projects.map((project) => (
             <ProjectCard key={project.id} project={project} onClick={setSelectedProject} />
           ))}
         </div>

@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { ArrowRight, Download, ShieldCheck, Zap, Sparkles, Github, Linkedin, Mail } from 'lucide-react';
+import { ArrowRight, Download, ShieldCheck, Github, Linkedin, Mail } from 'lucide-react';
 import { GradientText } from '@/components/GradientText';
 import { useTheme } from '@/hooks/useTheme';
 
@@ -102,7 +102,7 @@ export function Hero() {
               <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
             </a>
             <a
-              href="/resume.pdf"
+              href="/cv.pdf"
               className={`group inline-flex items-center justify-center gap-2 px-10 py-4 rounded-2xl border font-bold text-sm tracking-widest transition-all duration-300 ${
                 isFuturistic 
                   ? 'border-primary-sea/30 text-off-white hover:bg-primary-sea/10' 
@@ -110,7 +110,7 @@ export function Hero() {
               }`}
             >
               <Download className="w-4 h-4" />
-              GET RESUME
+              DOWNLOAD CV
             </a>
           </motion.div>
 

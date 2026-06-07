@@ -1,168 +1,114 @@
-import { useState, useEffect } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
-import { Menu, X, Sparkles, Zap } from 'lucide-react';
-import { useScroll } from '@/hooks/useScroll';
+import { useState } from 'react';
+import { motion, useScroll, useMotionValueEvent } from 'framer-motion';
+import { Sparkles, Zap, User, Code, Briefcase, Mail } from 'lucide-react';
 import { useTheme } from '@/hooks/useTheme';
 
 const navLinks = [
-  { name: 'About', href: '#about' },
-  { name: 'Projects', href: '#projects' },
-  { name: 'Experience', href: '#experience' },
-  { name: 'Contact', href: '#contact' }
+  { name: 'About', href: '#about', icon: <User className="w-4 h-4" /> },
+  { name: 'Projects', href: '#projects', icon: <Code className="w-4 h-4" /> },
+  { name: 'Experience', href: '#experience', icon: <Briefcase className="w-4 h-4" /> },
+  { name: 'Contact', href: '#contact', icon: <Mail className="w-4 h-4" /> }
 ];
 
 export function Navigation() {
-  const isScrolled = useScroll(50);
+  const { scrollY } = useScroll();
+  const [isScrolled, setIsScrolled] = useState(false);
+  const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
   const { mode, toggleMode } = useTheme();
-  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const isFuturistic = mode === 'futuristic';
 
-  // Close mobile menu on resize
-  useEffect(() => {
-    const handleResize = () => {
-      if (window.innerWidth >= 768) {
-        setIsMobileMenuOpen(false);
-      }
-    };
-    window.addEventListener('resize', handleResize);
-    return () => window.removeEventListener('resize', handleResize);
-  }, []);
+  useMotionValueEvent(scrollY, "change", (latest) => {
+    if (latest > 50) setIsScrolled(true);
+    else setIsScrolled(false);
+  });
 
-  // Prevent scroll when mobile menu is open
-  useEffect(() => {
-    if (isMobileMenuOpen) {
-      document.body.style.overflow = 'hidden';
-    } else {
-      document.body.style.overflow = '';
-    }
-    return () => {
-      document.body.style.overflow = '';
-    };
-  }, [isMobileMenuOpen]);
-
-  const handleNavClick = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
+  const handleSmoothScroll = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
     e.preventDefault();
-    setIsMobileMenuOpen(false);
-    const element = document.querySelector(href);
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
+    const targetId = href.replace("#", "");
+    const targetElement = document.getElementById(targetId);
+    if (targetElement) {
+      targetElement.scrollIntoView({ behavior: "smooth", block: "start" });
     }
   };
 
   return (
-    <>
-      <motion.header
-        initial={{ y: -100, opacity: 0 }}
-        animate={{ y: 0, opacity: 1 }}
-        transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
-        className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-          isScrolled 
-            ? 'bg-darker/90 backdrop-blur-lg border-b border-primary-dark/20' 
-            : 'bg-transparent'
-        }`}
-      >
-        <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex items-center justify-between h-18 md:h-20">
-            {/* Logo */}
-            <a 
-              href="#" 
-              className="text-xl md:text-2xl font-bold font-heading text-off-white hover:text-primary-light transition-colors"
-              onClick={(e) => {
-                e.preventDefault();
-                window.scrollTo({ top: 0, behavior: 'smooth' });
-              }}
+    <motion.div
+      initial={{ y: -100, opacity: 0 }}
+      animate={{ y: 0, opacity: 1 }}
+      transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
+      className="fixed top-6 inset-x-0 mx-auto z-50 flex items-center justify-center pointer-events-none px-4"
+    >
+      <div className={`pointer-events-auto flex items-center gap-2 px-3 py-2 rounded-full transition-all duration-500 ease-out border ${
+        isScrolled 
+          ? 'bg-darker/80 backdrop-blur-xl border-primary-light/10 shadow-2xl' 
+          : 'bg-transparent border-transparent'
+      }`}>
+        {/* Logo */}
+        <a 
+          href="#" 
+          onClick={(e) => {
+            e.preventDefault();
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+          }}
+          className="flex items-center justify-center w-10 h-10 rounded-full bg-primary-sea text-white font-bold font-heading text-sm transition-transform hover:scale-110"
+        >
+          AI
+        </a>
+
+        {/* Links */}
+        <nav className="flex items-center gap-1 mx-2">
+          {navLinks.map((link, idx) => (
+            <a
+              key={link.name}
+              href={link.href}
+              onClick={(e) => handleSmoothScroll(e, link.href)}
+              onMouseEnter={() => setHoveredIndex(idx)}
+              onMouseLeave={() => setHoveredIndex(null)}
+              className="relative px-4 py-2 rounded-full text-xs font-bold tracking-widest uppercase transition-colors duration-300"
             >
-              Coolz<span className="text-primary-sea">.</span>Ire
+              <span className={`relative z-10 ${
+                hoveredIndex === idx ? 'text-primary-sea' : 'text-slate'
+              }`}>
+                <span className="hidden sm:block">{link.name}</span>
+                <span className="block sm:hidden">{link.icon}</span>
+              </span>
+              
+              {hoveredIndex === idx && (
+                <motion.div
+                  layoutId="nav-hover"
+                  className="absolute inset-0 bg-primary-sea/10 rounded-full"
+                  initial={{ opacity: 0, scale: 0.8 }}
+                  animate={{ opacity: 1, scale: 1 }}
+                  exit={{ opacity: 0, scale: 0.8 }}
+                  transition={{ duration: 0.2 }}
+                />
+              )}
             </a>
-
-            {/* Desktop Navigation */}
-            <div className="hidden md:flex items-center gap-8">
-              {navLinks.map((link) => (
-                <a
-                  key={link.name}
-                  href={link.href}
-                  onClick={(e) => handleNavClick(e, link.href)}
-                  className="relative text-sm font-medium text-slate hover:text-off-white transition-colors link-underline py-1"
-                >
-                  {link.name}
-                </a>
-              ))}
-            </div>
-
-            <div className="hidden md:flex items-center gap-4">
-              <button
-                onClick={toggleMode}
-                className="p-2.5 rounded-full bg-primary-dark/50 text-off-white hover:text-primary-sea hover:bg-primary-dark transition-all duration-300 border border-primary-light/10"
-                title={`Switch to ${mode === 'minimal' ? 'Futuristic' : 'Minimalist'} mode`}
-              >
-                {mode === 'minimal' ? <Zap className="w-4 h-4" /> : <Sparkles className="w-4 h-4" />}
-              </button>
-
-              {/* CTA Button - Desktop */}
-              <a
-                href="#contact"
-                onClick={(e) => handleNavClick(e, '#contact')}
-                className="hidden md:inline-flex items-center px-5 py-2.5 rounded-lg bg-primary-sea text-off-white text-sm font-medium hover:bg-primary-dark transition-colors duration-200"
-              >
-                Let's Talk
-              </a>
-            </div>
-
-            {/* Mobile Menu Button */}
-            <button
-              onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-              className="md:hidden p-2 rounded-lg text-off-white hover:bg-primary-dark/30 transition-colors"
-              aria-label="Toggle menu"
-            >
-              {isMobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
-            </button>
-          </div>
+          ))}
         </nav>
-      </motion.header>
 
-      {/* Mobile Menu Overlay */}
-      <AnimatePresence>
-        {isMobileMenuOpen && (
-          <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            exit={{ opacity: 0 }}
-            transition={{ duration: 0.2 }}
-            className="fixed inset-0 z-40 bg-darker/95 backdrop-blur-lg md:hidden"
+        <div className="flex items-center gap-2">
+          <button
+            onClick={toggleMode}
+            className={`p-2.5 rounded-full transition-all duration-300 border ${
+              isFuturistic 
+                ? 'bg-primary-dark border-primary-light/10 text-primary-sea shadow-[0_0_15px_rgba(39,76,146,0.2)]' 
+                : 'bg-off-white border-primary-dark/5 text-primary-dark shadow-sm'
+            }`}
           >
-            <motion.nav
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              exit={{ opacity: 0, y: 20 }}
-              transition={{ duration: 0.3, delay: 0.1 }}
-              className="flex flex-col items-center justify-center h-full gap-8"
-            >
-              {navLinks.map((link, index) => (
-                <motion.a
-                  key={link.name}
-                  href={link.href}
-                  onClick={(e) => handleNavClick(e, link.href)}
-                  initial={{ opacity: 0, y: 20 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.3, delay: 0.1 + index * 0.05 }}
-                  className="text-2xl font-heading font-medium text-off-white hover:text-primary-light transition-colors"
-                >
-                  {link.name}
-                </motion.a>
-              ))}
-              <motion.a
-                href="#contact"
-                onClick={(e) => handleNavClick(e, '#contact')}
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.3, delay: 0.3 }}
-                className="mt-4 px-8 py-3 rounded-lg bg-primary-sea text-off-white font-medium hover:bg-primary-dark transition-colors"
-              >
-                Let's Talk
-              </motion.a>
-            </motion.nav>
-          </motion.div>
-        )}
-      </AnimatePresence>
-    </>
+            {mode === 'minimal' ? <Zap className="w-4 h-4" /> : <Sparkles className="w-4 h-4" />}
+          </button>
+
+          <a
+            href="#contact"
+            onClick={(e) => handleSmoothScroll(e, '#contact')}
+            className="px-6 py-2.5 rounded-full bg-primary-sea text-white text-xs font-bold tracking-widest uppercase hover:bg-primary-dark transition-all duration-300 shadow-lg shadow-primary-sea/20"
+          >
+            TALK
+          </a>
+        </div>
+      </div>
+    </motion.div>
   );
 }
+

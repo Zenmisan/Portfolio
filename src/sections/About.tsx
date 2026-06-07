@@ -1,8 +1,9 @@
-import { motion } from 'framer-motion';
 import { ScrollReveal } from '@/components/ScrollReveal';
 import { Code2, Coffee, Zap, Heart, Layout, Gauge, Code, Link as LinkIcon } from 'lucide-react';
 import { useTheme } from '@/hooks/useTheme';
 import { SectionTitle } from '@/components/SectionTitle';
+import { StatCard } from '@/components/StatCard';
+import { stats } from '@/data/experience';
 
 export function About() {
   const { mode } = useTheme();
@@ -39,6 +40,19 @@ export function About() {
               complexity into simple, elegant outcomes.
             </p>
           </ScrollReveal>
+
+          <div className="grid grid-cols-2 gap-4 mb-12">
+            {stats.map((stat, index) => (
+              <StatCard
+                key={stat.label}
+                value={stat.value}
+                suffix={stat.suffix}
+                label={stat.label}
+                delay={index * 100}
+                variant={isFuturistic ? 'dark' : 'light'}
+              />
+            ))}
+          </div>
 
           <div className="space-y-8">
             {principles.map((item, index) => (
