@@ -78,6 +78,11 @@ module.exports = {
         'glow-lg': '0 0 60px rgba(39, 76, 146, 0.4)',
         'card': '0 4px 24px rgba(20, 33, 61, 0.4)',
         'card-hover': '0 8px 32px rgba(39, 76, 146, 0.3)',
+        'futuristic': '0 0 20px rgba(39, 76, 146, 0.2), inset 0 0 10px rgba(39, 76, 146, 0.1)',
+      },
+      backgroundImage: {
+        'minimal-gradient': 'linear-gradient(to bottom, #0f0f1a, #1a1a2e)',
+        'futuristic-gradient': 'radial-gradient(circle at 50% 50%, #14213D 0%, #0f0f1a 100%)',
       },
       keyframes: {
         "accordion-down": {

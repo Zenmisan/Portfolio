@@ -1,7 +1,8 @@
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Menu, X } from 'lucide-react';
+import { Menu, X, Sparkles, Zap } from 'lucide-react';
 import { useScroll } from '@/hooks/useScroll';
+import { useTheme } from '@/hooks/useTheme';
 
 const navLinks = [
   { name: 'About', href: '#about' },
@@ -12,6 +13,7 @@ const navLinks = [
 
 export function Navigation() {
   const isScrolled = useScroll(50);
+  const { mode, toggleMode } = useTheme();
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   // Close mobile menu on resize
@@ -86,14 +88,24 @@ export function Navigation() {
               ))}
             </div>
 
-            {/* CTA Button - Desktop */}
-            <a
-              href="#contact"
-              onClick={(e) => handleNavClick(e, '#contact')}
-              className="hidden md:inline-flex items-center px-5 py-2.5 rounded-lg bg-primary-sea text-off-white text-sm font-medium hover:bg-primary-dark transition-colors duration-200"
-            >
-              Let's Talk
-            </a>
+            <div className="hidden md:flex items-center gap-4">
+              <button
+                onClick={toggleMode}
+                className="p-2.5 rounded-full bg-primary-dark/50 text-off-white hover:text-primary-sea hover:bg-primary-dark transition-all duration-300 border border-primary-light/10"
+                title={`Switch to ${mode === 'minimal' ? 'Futuristic' : 'Minimalist'} mode`}
+              >
+                {mode === 'minimal' ? <Zap className="w-4 h-4" /> : <Sparkles className="w-4 h-4" />}
+              </button>
+
+              {/* CTA Button - Desktop */}
+              <a
+                href="#contact"
+                onClick={(e) => handleNavClick(e, '#contact')}
+                className="hidden md:inline-flex items-center px-5 py-2.5 rounded-lg bg-primary-sea text-off-white text-sm font-medium hover:bg-primary-dark transition-colors duration-200"
+              >
+                Let's Talk
+              </a>
+            </div>
 
             {/* Mobile Menu Button */}
             <button

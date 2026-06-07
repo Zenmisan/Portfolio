@@ -1,12 +1,11 @@
 import { motion } from 'framer-motion';
-import { ArrowRight, Download, MapPin } from 'lucide-react';
-import { TechBadge } from '@/components/TechBadge';
-import { SocialLinks } from '@/components/SocialLinks';
+import { ArrowRight, Download, ShieldCheck, Zap, Sparkles, Github, Linkedin, Mail } from 'lucide-react';
 import { GradientText } from '@/components/GradientText';
-
-const techStack = ['Typescript', 'Python', 'React', 'Node.js', 'Web3'];
+import { useTheme } from '@/hooks/useTheme';
 
 export function Hero() {
+  const { mode } = useTheme();
+
   const handleScrollTo = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
     e.preventDefault();
     const element = document.querySelector(href);
@@ -15,166 +14,123 @@ export function Hero() {
     }
   };
 
+  const isFuturistic = mode === 'futuristic';
+
+  const containerVariants = {
+    hidden: { opacity: 0 },
+    visible: {
+      opacity: 1,
+      transition: {
+        staggerChildren: 0.1,
+        delayChildren: 0.3
+      }
+    }
+  };
+
+  const itemVariants = {
+    hidden: { opacity: 0, y: 20 },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: { duration: 0.5 }
+    }
+  };
+
   return (
-    <section className="relative min-h-screen flex items-center overflow-hidden">
-      {/* Background Image with Overlay */}
-      <div className="absolute inset-0 z-0">
-        <img 
-          src="/images/hero-bg.jpg" 
-          alt="" 
-          className="w-full h-full object-cover opacity-60"
-        />
-        <div className="absolute inset-0 bg-gradient-to-b from-darker/80 via-darker/70 to-darker" />
+    <section className={`relative min-h-screen flex items-center overflow-hidden transition-colors duration-700 ${
+      isFuturistic ? 'bg-futuristic-gradient' : 'bg-minimal-gradient'
+    }`}>
+      {/* Background Decor */}
+      <div className="absolute inset-0 z-0 pointer-events-none opacity-40">
+        <div className="absolute top-[-10%] right-[-10%] w-[50%] h-[50%] bg-primary-sea/10 rounded-full blur-[120px]" />
+        <div className="absolute bottom-[-10%] left-[-10%] w-[50%] h-[50%] bg-primary-dark/20 rounded-full blur-[120px]" />
       </div>
 
-      {/* Floating Particles Effect */}
-      <div className="absolute inset-0 z-0 overflow-hidden pointer-events-none">
-        {[...Array(6)].map((_, i) => (
-          <motion.div
-            key={i}
-            className="absolute w-2 h-2 rounded-full bg-primary-light/30"
-            style={{
-              left: `${15 + i * 15}%`,
-              top: `${20 + (i % 3) * 25}%`,
-            }}
-            animate={{
-              y: [0, -30, 0],
-              opacity: [0.3, 0.6, 0.3],
-            }}
-            transition={{
-              duration: 4 + i,
-              repeat: Infinity,
-              ease: "easeInOut",
-              delay: i * 0.5,
-            }}
-          />
-        ))}
-      </div>
-
-      {/* Content */}
-      <div className="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-24 pb-16">
-        <div className="max-w-3xl">
-          {/* Tagline */}
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
-            className="flex items-center gap-2 mb-6"
-          >
-            <span className="w-12 h-[2px] bg-primary-sea" />
-            <span className="text-sm font-mono text-primary-light uppercase tracking-wider">
-              Fullstack Developer & Mathematics Student
-            </span>
+      <div className="relative z-10 w-full max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 pt-32 pb-20">
+        <motion.div 
+          variants={containerVariants}
+          initial="hidden"
+          animate="visible"
+          className="max-w-4xl"
+        >
+          {/* Status/Context */}
+          <motion.div variants={itemVariants} className="flex items-center gap-3 mb-8">
+            <div className="h-px w-10 bg-primary-sea" />
+            <span className="text-xs font-mono text-primary-light uppercase tracking-[0.3em]">Fullstack Engineer • Industrial Mathematics</span>
           </motion.div>
-
+          
           {/* Main Title */}
           <motion.h1
-            initial={{ opacity: 0, y: 40 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 1, delay: 0.4, ease: [0.16, 1, 0.3, 1] }}
-            className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold font-heading leading-[1.1] mb-6"
+            variants={itemVariants}
+            className="text-6xl sm:text-7xl md:text-8xl font-bold font-heading leading-[1.05] mb-8"
           >
-            <span className="text-off-white">Bridging</span>
-            <br />
-            <GradientText>Mathematical Logic</GradientText>
-            <br />
-            <span className="text-off-white">with Code</span>
+            I build systems <br />
+            that <GradientText>Don't Break.</GradientText>
           </motion.h1>
-
-          {/* Subtitle */}
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.6, ease: [0.16, 1, 0.3, 1] }}
-            className="flex items-center gap-2 text-slate mb-6"
-          >
-            <MapPin className="w-4 h-4 text-primary-sea" />
-            <span className="text-sm">Lagos, Nigeria</span>
-          </motion.div>
-
+          
           {/* Description */}
           <motion.p
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.7, ease: [0.16, 1, 0.3, 1] }}
-            className="text-lg text-slate leading-relaxed mb-8 max-w-2xl"
+            variants={itemVariants}
+            className="text-lg md:text-xl text-slate leading-relaxed mb-12 max-w-2xl font-body"
           >
-            An analytical and detail-oriented Fullstack Developer with a strong foundation in 
-            Industrial Mathematics. Passionate about building high-performance systems and 
-            decentralized applications, with a focus on FinTech, Investment Banking, and Web3.
+            Passionate about building high-performance systems and decentralized applications. 
+            I leverage <span className="text-off-white font-medium italic mx-1">mathematical logic</span> 
+             to create fault-tolerant architectures that scale. Focus: FinTech, Web3, and Enterprise Tools.
           </motion.p>
+          
+          {/* Tech Pills */}
+          <motion.div variants={itemVariants} className="flex flex-wrap gap-3 mb-16">
+            {['React', 'Node.js', 'TypeScript', 'Web3', 'Python'].map((tech) => (
+              <span key={tech} className="px-4 py-1.5 rounded-xl border border-primary-light/10 bg-primary-light/5 text-xs font-mono text-primary-light">
+                {tech}
+              </span>
+            ))}
+          </motion.div>
 
           {/* CTA Buttons */}
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.8, ease: [0.16, 1, 0.3, 1] }}
-            className="flex flex-wrap gap-4 mb-10"
-          >
+          <motion.div variants={itemVariants} className="flex flex-col sm:flex-row gap-6 mb-16">
             <a
               href="#projects"
               onClick={(e) => handleScrollTo(e, '#projects')}
-              className="group inline-flex items-center gap-2 px-6 py-3 rounded-lg bg-primary-sea text-off-white font-medium hover:bg-primary-dark transition-all duration-200 hover:shadow-glow"
+              className={`group inline-flex items-center justify-center gap-2 px-10 py-4 rounded-2xl font-bold text-sm tracking-widest transition-all duration-300 ${
+                isFuturistic 
+                  ? 'bg-primary-sea text-white shadow-glow hover:shadow-glow-lg' 
+                  : 'bg-darker text-white hover:bg-primary-dark'
+              }`}
             >
-              View My Work
+              EXPLORE SOLUTIONS
               <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
             </a>
             <a
               href="/resume.pdf"
-              className="group inline-flex items-center gap-2 px-6 py-3 rounded-lg border border-primary-dark/50 text-off-white font-medium hover:bg-primary-dark/20 transition-all duration-200"
+              className={`group inline-flex items-center justify-center gap-2 px-10 py-4 rounded-2xl border font-bold text-sm tracking-widest transition-all duration-300 ${
+                isFuturistic 
+                  ? 'border-primary-sea/30 text-off-white hover:bg-primary-sea/10' 
+                  : 'border-slate/20 text-slate hover:border-darker hover:text-darker'
+              }`}
             >
               <Download className="w-4 h-4" />
-              Download CV
+              GET RESUME
             </a>
           </motion.div>
 
-          {/* Tech Stack */}
-          <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 0.6, delay: 1 }}
-            className="mb-10"
-          >
-            <p className="text-xs font-mono text-slate uppercase tracking-wider mb-4">
-              Tech Stack
-            </p>
-            <div className="flex flex-wrap gap-3">
-              {techStack.map((tech, index) => (
-                <TechBadge key={tech} tech={tech} delay={1 + index * 0.05} />
-              ))}
+          {/* Socials */}
+          <motion.div variants={itemVariants} className="flex items-center gap-8 border-t border-primary-light/10 pt-10">
+            <div className="flex gap-6">
+              <a href="https://github.com/zenmisan" target="_blank" className="text-slate hover:text-primary-sea transition-colors"><Github className="w-5 h-5" /></a>
+              <a href="https://linkedin.com/in/zenmisan" target="_blank" className="text-slate hover:text-primary-sea transition-colors"><Linkedin className="w-5 h-5" /></a>
+              <a href="mailto:Zenmisan@gmail.com" className="text-slate hover:text-primary-sea transition-colors"><Mail className="w-5 h-5" /></a>
+            </div>
+            <div className="h-4 w-px bg-primary-light/20" />
+            <div className="flex items-center gap-2">
+              <ShieldCheck className="w-4 h-4 text-primary-sea" />
+              <span className="text-[10px] font-mono text-slate uppercase tracking-widest">Verified Engineer</span>
             </div>
           </motion.div>
-
-          {/* Social Links */}
-          <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 0.6, delay: 1.2 }}
-          >
-            <SocialLinks />
-          </motion.div>
-        </div>
-      </div>
-
-      {/* Scroll Indicator */}
-      <motion.div
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ duration: 0.6, delay: 1.5 }}
-        className="absolute bottom-8 left-1/2 -translate-x-1/2 z-10"
-      >
-        <motion.div
-          animate={{ y: [0, 10, 0] }}
-          transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
-          className="w-6 h-10 rounded-full border-2 border-primary-dark/50 flex items-start justify-center p-2"
-        >
-          <motion.div 
-            className="w-1.5 h-1.5 rounded-full bg-primary-light"
-            animate={{ y: [0, 12, 0], opacity: [1, 0.3, 1] }}
-            transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
-          />
         </motion.div>
-      </motion.div>
+      </div>
     </section>
   );
 }
+
+
