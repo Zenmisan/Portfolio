@@ -1,8 +1,8 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { ExternalLink, Github, X, ChevronRight } from "lucide-react";
 import { createPortal } from "react-dom";
-import { projects, Project } from "@/data/projects";
+import { projects, type Project } from "@/data/projects";
 import { useTheme } from "@/hooks/useTheme";
 import { SectionTitle } from "./SectionTitle";
 
