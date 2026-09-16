@@ -1,37 +1,24 @@
-import { useState } from 'react';
-import { Navigation } from '@/components/Navigation';
-import { Hero } from '@/sections/Hero';
-import { About } from '@/sections/About';
-import { InteractiveProjects } from '@/components/InteractiveProjects';
-import { Experience } from '@/sections/Experience';
-import { Contact } from '@/sections/Contact';
-import { Footer } from '@/sections/Footer';
-import { Loader } from '@/components/Loader';
-import { ThemeProvider } from '@/hooks/useTheme';
+import { Navbar } from './components/Navbar';
+import { Hero } from './sections/Hero';
+import { About } from './sections/About';
+import { CompetenciesMatrix } from './sections/CompetenciesMatrix';
+import { ProjectsSection } from './sections/ProjectsSection';
+import { EducationSection } from './sections/EducationSection';
+import { DenseColophon } from './components/DenseColophon';
 
-function App() {
-  const [isLoaded, setIsLoaded] = useState(false);
-
+export function App() {
   return (
-    <ThemeProvider>
-      <div className="min-h-screen bg-darker text-off-white selection:bg-primary-sea selection:text-white">
-        {!isLoaded && <Loader onComplete={() => setIsLoaded(true)} />}
-        
-        {isLoaded && (
-          <>
-            <Navigation />
-            <main>
-              <Hero />
-              <About />
-              <InteractiveProjects />
-              <Experience />
-              <Contact />
-            </main>
-            <Footer />
-          </>
-        )}
-      </div>
-    </ThemeProvider>
+    <div className="min-h-screen bg-[#090b0e] text-[#f1f5f9] selection:bg-sky-500/25 selection:text-white">
+      <Navbar />
+      <main>
+        <Hero />
+        <About />
+        <CompetenciesMatrix />
+        <ProjectsSection />
+        <EducationSection />
+      </main>
+      <DenseColophon />
+    </div>
   );
 }
 

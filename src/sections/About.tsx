@@ -1,109 +1,31 @@
-import { ScrollReveal } from '@/components/ScrollReveal';
-import { Code2, Coffee, Zap, Heart, Layout, Gauge, Code, Link as LinkIcon } from 'lucide-react';
-import { useTheme } from '@/hooks/useTheme';
-import { SectionTitle } from '@/components/SectionTitle';
-import { StatCard } from '@/components/StatCard';
-import { stats } from '@/data/experience';
+import { portfolioData } from '../data/portfolioData';
 
-export function About() {
-  const { mode } = useTheme();
-  const isFuturistic = mode === 'futuristic';
-
-  const principles = [
-    { icon: Code2, title: "Deterministic Logic", description: "Clean, maintainable code rooted in mathematical precision." },
-    { icon: Coffee, title: "Obsessive Detail", description: "Pixel-perfect implementation where every interaction is intentional." },
-    { icon: Zap, title: "Fault Tolerance", description: "Systems designed to handle the unexpected without breaking." },
-    { icon: Heart, title: "User-Centric Design", description: "Building tools that solve real human problems efficiently." }
-  ];
-
-  const services = [
-    { icon: Layout, title: "UI/UX Engineering", description: "Intuitive interfaces that balance aesthetic beauty with deep functionality." },
-    { icon: Gauge, title: "System Optimization", description: "Fine-tuning performance to ensure lightning-fast load times and execution." },
-    { icon: Code, title: "Architecture Design", description: "Scalable component structures that evolve alongside your project." },
-    { icon: LinkIcon, title: "Integration Services", description: "Seamlessly connecting complex APIs and decentralized protocols." }
-  ];
+export const About = () => {
+  const { education } = portfolioData;
 
   return (
-    <div id="about" className="flex flex-col lg:flex-row w-full overflow-hidden border-t border-primary-light/10">
-      {/* WHO AM I Section */}
-      <section className={`w-full lg:w-1/2 py-24 px-6 sm:px-12 flex flex-col justify-center transition-colors duration-700 ${
-        isFuturistic ? 'bg-dark' : 'bg-white'
-      }`}>
-        <div className="max-w-xl mx-auto lg:mr-0 lg:ml-auto w-full">
-          <SectionTitle text="WHO AM I?" />
-
-          <ScrollReveal delay={0.2}>
-            <p className="text-lg text-slate leading-relaxed mb-12 font-body text-center">
-              I am a Fullstack Engineer who bridges the gap between 
-              <span className="text-primary-sea font-bold mx-1">Industrial Mathematics</span> 
-              and robust software systems. I don't just write code; I design systems that resolve 
-              complexity into simple, elegant outcomes.
-            </p>
-          </ScrollReveal>
-
-          <div className="grid grid-cols-2 gap-4 mb-12">
-            {stats.map((stat, index) => (
-              <StatCard
-                key={stat.label}
-                value={stat.value}
-                suffix={stat.suffix}
-                label={stat.label}
-                delay={index * 100}
-                variant={isFuturistic ? 'dark' : 'light'}
-              />
-            ))}
-          </div>
-
-          <div className="space-y-8">
-            {principles.map((item, index) => (
-              <ScrollReveal key={item.title} delay={0.3 + index * 0.1}>
-                <div className="group flex items-start gap-4">
-                  <div className={`mt-1 p-2 rounded-lg transition-all duration-300 ${
-                    isFuturistic ? 'bg-primary-dark/50 text-primary-sea group-hover:bg-primary-sea group-hover:text-white' : 'bg-off-white text-primary-sea group-hover:bg-primary-sea group-hover:text-white'
-                  }`}>
-                    <item.icon className="w-5 h-5" />
-                  </div>
-                  <div>
-                    <h3 className={`text-base font-bold mb-1 ${isFuturistic ? 'text-off-white' : 'text-darker'}`}>{item.title}</h3>
-                    <p className="text-sm text-slate">{item.description}</p>
-                  </div>
-                </div>
-              </ScrollReveal>
-            ))}
-          </div>
+    <section id="about" className="border-b border-white/[0.08] py-14 sm:py-20">
+      <div className="mx-auto max-w-4xl px-4 sm:px-6">
+        {/* Section Header */}
+        <div className="mb-6 flex items-center gap-3">
+          <h2 className="text-xl font-bold tracking-tight text-white font-heading">
+            About Me
+          </h2>
+          <div className="h-px flex-1 bg-white/[0.08]" aria-hidden="true" />
         </div>
-      </section>
 
-      {/* WHAT I DO Section */}
-      <section className={`w-full lg:w-1/2 py-24 px-6 sm:px-12 flex flex-col justify-center border-t lg:border-t-0 lg:border-l border-primary-light/10 transition-colors duration-700 ${
-        isFuturistic ? 'bg-darker' : 'bg-off-white/20'
-      }`}>
-        <div className="max-w-xl mx-auto lg:ml-0 lg:mr-auto w-full">
-          <SectionTitle text="WHAT I DO" />
-
-          <ScrollReveal delay={0.2}>
-            <p className="text-lg text-slate leading-relaxed mb-12 font-body text-center">
-              Specializing in <span className="text-primary-sea font-bold mx-1">Scalable Web Architectures</span> 
-              and <span className="text-primary-sea font-bold mx-1">FinTech solutions</span>. 
-              My focus is on creating value through technical excellence and intentional design.
-            </p>
-          </ScrollReveal>
-
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-            {services.map((item, index) => (
-              <ScrollReveal key={item.title} delay={0.3 + index * 0.1}>
-                <div className={`p-6 rounded-2xl border transition-all duration-300 group ${
-                  isFuturistic ? 'bg-primary-dark/10 border-primary-light/5 hover:border-primary-sea/30' : 'bg-white border-primary-dark/5 hover:shadow-xl hover:shadow-primary-dark/5'
-                }`}>
-                  <item.icon className="w-8 h-8 text-primary-sea mb-4 group-hover:scale-110 transition-transform" />
-                  <h3 className={`text-base font-bold mb-2 ${isFuturistic ? 'text-off-white' : 'text-darker'}`}>{item.title}</h3>
-                  <p className="text-xs text-slate leading-relaxed">{item.description}</p>
-                </div>
-              </ScrollReveal>
-            ))}
-          </div>
+        <div className="space-y-4 text-slate-300 leading-relaxed text-sm sm:text-base">
+          <p>
+            I am a self-taught Full-Stack Software Engineer with a deep focus on backend development, databases, and APIs. I enjoy digging into the internals of systems, optimizing data flows, and building reliable applications.
+          </p>
+          <p>
+            Alongside programming, I am currently studying <strong className="text-white font-medium">{education.degree}</strong> at the <strong className="text-white font-medium">{education.institution}</strong>. This provides me with a strong analytical foundation in linear algebra, statistics, discrete mathematics, and algorithmic problem-solving.
+          </p>
+          <p className="text-slate-400 text-sm">
+            I work primarily across Python, TypeScript, SQL, and modern frameworks like FastAPI, Express, React, and Next.js, and I continuously expand my skillset into systems programming with Rust and smart contracts.
+          </p>
         </div>
-      </section>
-    </div>
+      </div>
+    </section>
   );
-}
+};
