@@ -43,12 +43,12 @@ Self-taught Full-Stack Software Engineer with a primary concentration in backend
   columns: (1fr, 1fr),
   column-gutter: 1cm,
   [
-    *Languages:* Python, TypeScript, JavaScript, Rust, C++, Java, SQL, Solidity \
+    *Languages:* Python, TypeScript, JavaScript, Rust, Go, Kotlin, C\#, C++, Java, SQL, Solidity \
     *Backend & APIs:* FastAPI, Node.js, Express, PostgreSQL, REST APIs, WebSockets, GraphQL \
-    *Frontend:* React, Next.js, Vite, Tailwind CSS, HTML5, CSS3
+    *Frontend & Mobile:* React, Flutter, Next.js, Vite, Tailwind CSS, HTML5, CSS3
   ],
   [
-    *Tools & DevOps:* Docker, Linux, Git, CI/CD, Bun, PowerShell \
+    *Tools & DevOps:* Docker, Linux, Git, CI/CD, Bun, Supabase, PowerShell \
     *Analytical & Math:* Industrial Math, Linear Algebra, Statistics, Calculus, NumPy, Pandas, MATLAB, LaTeX
   ]
 )
@@ -59,8 +59,23 @@ Self-taught Full-Stack Software Engineer with a primary concentration in backend
 #heading(level: 2)[PROJECTS]
 #line(length: 100%, stroke: 0.5pt + text-muted)
 
-*manga-dl* | Web Application & Media Platform #h(1fr) 2024 | Present \
-- Developed an automated scraping and chapter delivery engine with rate-limiting and error handling.
-- Built a responsive client-side web interface optimized for seamless mobile and desktop reading.
-- Integrated with Firebase for reliable hosting and deployment.
-- *Tech Stack:* Python, TypeScript, React, Firebase, Tailwind CSS. #link("https://manga-dl.web.app")[manga-dl.web.app] | #link("https://github.com/zenmisan/manga-dl")[github.com/zenmisan/manga-dl]
+*Cycles* | Offline-First P2P Task Sync Platform #h(1fr) 2024 | Present \
+- Engineered an offline-first task manager synchronizing across devices with zero server, cloud, or account dependency.
+- Implemented a 4-tier proximity transport hierarchy utilizing Wi-Fi Direct, local LAN mDNS, and BLE GATT framing.
+- Deterministically resolved concurrent multi-device state using Automerge CRDTs paired with reactive SQLite storage.
+- *Tech Stack:* Flutter, Rust, Go, Automerge CRDT, SQLite, BLE, Wi-Fi Direct. #link("https://z-cycles.web.app")[z-cycles.web.app] | #link("https://github.com/Zenmisan/Cycle")[github.com/Zenmisan/Cycle]
+
+#v(0.2cm)
+
+*manga-dl* | Multi-Platform Reading Ecosystem #h(1fr) 2024 | Present \
+- Architected reading ecosystem spanning Web PWA, native Android (Kotlin/Compose), and Windows (WinUI 3/C\# + C++20).
+- Engineered a Tachiyomi-compatible extension engine with 500+ sources, 4 reading modes, and WebSocket download queue.
+- Deployed FastAPI backend for scraping proxies and Supabase for cross-device library and reading progress synchronization.
+- *Tech Stack:* React, TypeScript, Kotlin, C\#, C++20, Python, FastAPI, Supabase, SQLite. #link("https://manga-dl.web.app")[manga-dl.web.app] | #link("https://github.com/Zenmisan/manga-dl")[github.com/Zenmisan/manga-dl]
+
+#v(0.2cm)
+
+*Stytch* | WhatsApp Automation Bot & Developer Dashboard #h(1fr) 2024 | Present \
+- Built an event-driven WhatsApp bot and developer dashboard using TypeScript and Bun over the Baileys protocol.
+- Developed real-time WebSocket log streaming, QR pairing interface, and dynamic SQLite-backed command management.
+- *Tech Stack:* TypeScript, Bun, React, WebSocket, Baileys, SQLite, Docker, Tailwind CSS. #link("https://stytch.web.app")[stytch.web.app] | #link("https://github.com/Zenmisan/stytch")[github.com/Zenmisan/stytch]
