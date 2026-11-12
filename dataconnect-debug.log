@@ -1,0 +1,173 @@
+E1112 17:04:11.530369   30185 dev.go:80] Failed to load initial config from "/home/zenmi/Projects/portfolio/dataconnect": could not find dataconnect.yaml in `/home/zenmi/Projects/portfolio/dataconnect`
+E1112 17:04:11.533526   30185 watch.go:116] watchAllDir unable to walk dir `/home/zenmi/Projects/portfolio/dataconnect`: lstat /home/zenmi/Projects/portfolio/dataconnect: no such file or directory
+I1112 17:04:11.537476   30185 dev.go:101] Listening on address (HTTP + gRPC): 127.0.0.1:50001
+E1112 17:04:21.542688   30185 watch.go:40] Failed to load config from "/home/zenmi/Projects/portfolio/dataconnect": could not find dataconnect.yaml in `/home/zenmi/Projects/portfolio/dataconnect`
+E1112 17:04:31.543925   30185 watch.go:40] Failed to load config from "/home/zenmi/Projects/portfolio/dataconnect": could not find dataconnect.yaml in `/home/zenmi/Projects/portfolio/dataconnect`
+E1112 17:04:41.534040   30185 watch.go:40] Failed to load config from "/home/zenmi/Projects/portfolio/dataconnect": could not find dataconnect.yaml in `/home/zenmi/Projects/portfolio/dataconnect`
+E1112 17:04:51.542808   30185 watch.go:40] Failed to load config from "/home/zenmi/Projects/portfolio/dataconnect": could not find dataconnect.yaml in `/home/zenmi/Projects/portfolio/dataconnect`
+E1112 17:05:01.542622   30185 watch.go:40] Failed to load config from "/home/zenmi/Projects/portfolio/dataconnect": could not find dataconnect.yaml in `/home/zenmi/Projects/portfolio/dataconnect`
+E1112 17:05:11.533724   30185 watch.go:116] watchAllDir unable to walk dir `/home/zenmi/Projects/portfolio/dataconnect`: lstat /home/zenmi/Projects/portfolio/dataconnect: no such file or directory
+E1112 17:05:11.534344   30185 watch.go:40] Failed to load config from "/home/zenmi/Projects/portfolio/dataconnect": could not find dataconnect.yaml in `/home/zenmi/Projects/portfolio/dataconnect`
+E1112 17:05:21.542638   30185 watch.go:40] Failed to load config from "/home/zenmi/Projects/portfolio/dataconnect": could not find dataconnect.yaml in `/home/zenmi/Projects/portfolio/dataconnect`
+E1112 17:05:31.542848   30185 watch.go:40] Failed to load config from "/home/zenmi/Projects/portfolio/dataconnect": could not find dataconnect.yaml in `/home/zenmi/Projects/portfolio/dataconnect`
+E1112 17:05:41.533980   30185 watch.go:40] Failed to load config from "/home/zenmi/Projects/portfolio/dataconnect": could not find dataconnect.yaml in `/home/zenmi/Projects/portfolio/dataconnect`
+E1112 17:05:51.542614   30185 watch.go:40] Failed to load config from "/home/zenmi/Projects/portfolio/dataconnect": could not find dataconnect.yaml in `/home/zenmi/Projects/portfolio/dataconnect`
+E1112 17:06:01.542784   30185 watch.go:40] Failed to load config from "/home/zenmi/Projects/portfolio/dataconnect": could not find dataconnect.yaml in `/home/zenmi/Projects/portfolio/dataconnect`
+E1112 17:06:11.533965   30185 watch.go:116] watchAllDir unable to walk dir `/home/zenmi/Projects/portfolio/dataconnect`: lstat /home/zenmi/Projects/portfolio/dataconnect: no such file or directory
+E1112 17:06:11.534039   30185 watch.go:40] Failed to load config from "/home/zenmi/Projects/portfolio/dataconnect": could not find dataconnect.yaml in `/home/zenmi/Projects/portfolio/dataconnect`
+E1112 17:06:21.534132   30185 watch.go:40] Failed to load config from "/home/zenmi/Projects/portfolio/dataconnect": could not find dataconnect.yaml in `/home/zenmi/Projects/portfolio/dataconnect`
+E1112 17:06:31.534793   30185 watch.go:40] Failed to load config from "/home/zenmi/Projects/portfolio/dataconnect": could not find dataconnect.yaml in `/home/zenmi/Projects/portfolio/dataconnect`
+E1112 17:06:41.533952   30185 watch.go:40] Failed to load config from "/home/zenmi/Projects/portfolio/dataconnect": could not find dataconnect.yaml in `/home/zenmi/Projects/portfolio/dataconnect`
+E1112 17:06:51.543237   30185 watch.go:40] Failed to load config from "/home/zenmi/Projects/portfolio/dataconnect": could not find dataconnect.yaml in `/home/zenmi/Projects/portfolio/dataconnect`
+E1112 17:07:01.547651   30185 watch.go:40] Failed to load config from "/home/zenmi/Projects/portfolio/dataconnect": could not find dataconnect.yaml in `/home/zenmi/Projects/portfolio/dataconnect`
+E1112 17:07:11.533742   30185 watch.go:116] watchAllDir unable to walk dir `/home/zenmi/Projects/portfolio/dataconnect`: lstat /home/zenmi/Projects/portfolio/dataconnect: no such file or directory
+E1112 17:07:11.533831   30185 watch.go:40] Failed to load config from "/home/zenmi/Projects/portfolio/dataconnect": could not find dataconnect.yaml in `/home/zenmi/Projects/portfolio/dataconnect`
+E1112 17:07:21.542703   30185 watch.go:40] Failed to load config from "/home/zenmi/Projects/portfolio/dataconnect": could not find dataconnect.yaml in `/home/zenmi/Projects/portfolio/dataconnect`
+E1112 17:07:31.542918   30185 watch.go:40] Failed to load config from "/home/zenmi/Projects/portfolio/dataconnect": could not find dataconnect.yaml in `/home/zenmi/Projects/portfolio/dataconnect`
+E1112 17:07:41.534011   30185 watch.go:40] Failed to load config from "/home/zenmi/Projects/portfolio/dataconnect": could not find dataconnect.yaml in `/home/zenmi/Projects/portfolio/dataconnect`
+E1112 17:07:51.542656   30185 watch.go:40] Failed to load config from "/home/zenmi/Projects/portfolio/dataconnect": could not find dataconnect.yaml in `/home/zenmi/Projects/portfolio/dataconnect`
+E1112 17:08:01.542721   30185 watch.go:40] Failed to load config from "/home/zenmi/Projects/portfolio/dataconnect": could not find dataconnect.yaml in `/home/zenmi/Projects/portfolio/dataconnect`
+E1112 17:08:11.533737   30185 watch.go:116] watchAllDir unable to walk dir `/home/zenmi/Projects/portfolio/dataconnect`: lstat /home/zenmi/Projects/portfolio/dataconnect: no such file or directory
+E1112 17:08:11.533759   30185 watch.go:40] Failed to load config from "/home/zenmi/Projects/portfolio/dataconnect": could not find dataconnect.yaml in `/home/zenmi/Projects/portfolio/dataconnect`
+E1112 17:08:21.536612   30185 watch.go:40] Failed to load config from "/home/zenmi/Projects/portfolio/dataconnect": could not find dataconnect.yaml in `/home/zenmi/Projects/portfolio/dataconnect`
+E1112 17:08:31.534086   30185 watch.go:40] Failed to load config from "/home/zenmi/Projects/portfolio/dataconnect": could not find dataconnect.yaml in `/home/zenmi/Projects/portfolio/dataconnect`
+E1112 17:08:41.533735   30185 watch.go:40] Failed to load config from "/home/zenmi/Projects/portfolio/dataconnect": could not find dataconnect.yaml in `/home/zenmi/Projects/portfolio/dataconnect`
+E1112 17:08:51.542697   30185 watch.go:40] Failed to load config from "/home/zenmi/Projects/portfolio/dataconnect": could not find dataconnect.yaml in `/home/zenmi/Projects/portfolio/dataconnect`
+E1112 17:09:01.542766   30185 watch.go:40] Failed to load config from "/home/zenmi/Projects/portfolio/dataconnect": could not find dataconnect.yaml in `/home/zenmi/Projects/portfolio/dataconnect`
+E1112 17:09:11.534079   30185 watch.go:116] watchAllDir unable to walk dir `/home/zenmi/Projects/portfolio/dataconnect`: lstat /home/zenmi/Projects/portfolio/dataconnect: no such file or directory
+E1112 17:09:11.534174   30185 watch.go:40] Failed to load config from "/home/zenmi/Projects/portfolio/dataconnect": could not find dataconnect.yaml in `/home/zenmi/Projects/portfolio/dataconnect`
+E1112 17:09:21.540761   30185 watch.go:40] Failed to load config from "/home/zenmi/Projects/portfolio/dataconnect": could not find dataconnect.yaml in `/home/zenmi/Projects/portfolio/dataconnect`
+E1112 17:09:31.542623   30185 watch.go:40] Failed to load config from "/home/zenmi/Projects/portfolio/dataconnect": could not find dataconnect.yaml in `/home/zenmi/Projects/portfolio/dataconnect`
+E1112 17:09:41.535867   30185 watch.go:40] Failed to load config from "/home/zenmi/Projects/portfolio/dataconnect": could not find dataconnect.yaml in `/home/zenmi/Projects/portfolio/dataconnect`
+E1112 17:09:51.542627   30185 watch.go:40] Failed to load config from "/home/zenmi/Projects/portfolio/dataconnect": could not find dataconnect.yaml in `/home/zenmi/Projects/portfolio/dataconnect`
+E1112 17:10:01.543762   30185 watch.go:40] Failed to load config from "/home/zenmi/Projects/portfolio/dataconnect": could not find dataconnect.yaml in `/home/zenmi/Projects/portfolio/dataconnect`
+E1112 17:10:11.537628   30185 watch.go:116] watchAllDir unable to walk dir `/home/zenmi/Projects/portfolio/dataconnect`: lstat /home/zenmi/Projects/portfolio/dataconnect: no such file or directory
+E1112 17:10:11.537935   30185 watch.go:40] Failed to load config from "/home/zenmi/Projects/portfolio/dataconnect": could not find dataconnect.yaml in `/home/zenmi/Projects/portfolio/dataconnect`
+E1112 17:10:21.538919   30185 watch.go:40] Failed to load config from "/home/zenmi/Projects/portfolio/dataconnect": could not find dataconnect.yaml in `/home/zenmi/Projects/portfolio/dataconnect`
+E1112 17:10:31.543488   30185 watch.go:40] Failed to load config from "/home/zenmi/Projects/portfolio/dataconnect": could not find dataconnect.yaml in `/home/zenmi/Projects/portfolio/dataconnect`
+E1112 17:10:41.533743   30185 watch.go:40] Failed to load config from "/home/zenmi/Projects/portfolio/dataconnect": could not find dataconnect.yaml in `/home/zenmi/Projects/portfolio/dataconnect`
+E1112 17:10:51.542624   30185 watch.go:40] Failed to load config from "/home/zenmi/Projects/portfolio/dataconnect": could not find dataconnect.yaml in `/home/zenmi/Projects/portfolio/dataconnect`
+E1112 17:11:01.543643   30185 watch.go:40] Failed to load config from "/home/zenmi/Projects/portfolio/dataconnect": could not find dataconnect.yaml in `/home/zenmi/Projects/portfolio/dataconnect`
+E1112 17:11:11.533996   30185 watch.go:116] watchAllDir unable to walk dir `/home/zenmi/Projects/portfolio/dataconnect`: lstat /home/zenmi/Projects/portfolio/dataconnect: no such file or directory
+E1112 17:11:11.534204   30185 watch.go:40] Failed to load config from "/home/zenmi/Projects/portfolio/dataconnect": could not find dataconnect.yaml in `/home/zenmi/Projects/portfolio/dataconnect`
+E1112 17:11:21.542813   30185 watch.go:40] Failed to load config from "/home/zenmi/Projects/portfolio/dataconnect": could not find dataconnect.yaml in `/home/zenmi/Projects/portfolio/dataconnect`
+E1112 17:11:31.543325   30185 watch.go:40] Failed to load config from "/home/zenmi/Projects/portfolio/dataconnect": could not find dataconnect.yaml in `/home/zenmi/Projects/portfolio/dataconnect`
+E1112 17:11:41.533902   30185 watch.go:40] Failed to load config from "/home/zenmi/Projects/portfolio/dataconnect": could not find dataconnect.yaml in `/home/zenmi/Projects/portfolio/dataconnect`
+E1112 17:11:51.543071   30185 watch.go:40] Failed to load config from "/home/zenmi/Projects/portfolio/dataconnect": could not find dataconnect.yaml in `/home/zenmi/Projects/portfolio/dataconnect`
+E1112 17:12:01.534740   30185 watch.go:40] Failed to load config from "/home/zenmi/Projects/portfolio/dataconnect": could not find dataconnect.yaml in `/home/zenmi/Projects/portfolio/dataconnect`
+E1112 17:12:11.534188   30185 watch.go:116] watchAllDir unable to walk dir `/home/zenmi/Projects/portfolio/dataconnect`: lstat /home/zenmi/Projects/portfolio/dataconnect: no such file or directory
+E1112 17:12:11.534355   30185 watch.go:40] Failed to load config from "/home/zenmi/Projects/portfolio/dataconnect": could not find dataconnect.yaml in `/home/zenmi/Projects/portfolio/dataconnect`
+E1112 17:12:21.542666   30185 watch.go:40] Failed to load config from "/home/zenmi/Projects/portfolio/dataconnect": could not find dataconnect.yaml in `/home/zenmi/Projects/portfolio/dataconnect`
+E1112 17:12:31.543747   30185 watch.go:40] Failed to load config from "/home/zenmi/Projects/portfolio/dataconnect": could not find dataconnect.yaml in `/home/zenmi/Projects/portfolio/dataconnect`
+E1112 17:12:41.535272   30185 watch.go:40] Failed to load config from "/home/zenmi/Projects/portfolio/dataconnect": could not find dataconnect.yaml in `/home/zenmi/Projects/portfolio/dataconnect`
+E1112 17:12:51.534135   30185 watch.go:40] Failed to load config from "/home/zenmi/Projects/portfolio/dataconnect": could not find dataconnect.yaml in `/home/zenmi/Projects/portfolio/dataconnect`
+E1112 17:13:01.542740   30185 watch.go:40] Failed to load config from "/home/zenmi/Projects/portfolio/dataconnect": could not find dataconnect.yaml in `/home/zenmi/Projects/portfolio/dataconnect`
+E1112 17:13:11.533812   30185 watch.go:116] watchAllDir unable to walk dir `/home/zenmi/Projects/portfolio/dataconnect`: lstat /home/zenmi/Projects/portfolio/dataconnect: no such file or directory
+E1112 17:13:11.533930   30185 watch.go:40] Failed to load config from "/home/zenmi/Projects/portfolio/dataconnect": could not find dataconnect.yaml in `/home/zenmi/Projects/portfolio/dataconnect`
+E1112 17:13:21.542621   30185 watch.go:40] Failed to load config from "/home/zenmi/Projects/portfolio/dataconnect": could not find dataconnect.yaml in `/home/zenmi/Projects/portfolio/dataconnect`
+E1112 17:13:31.535113   30185 watch.go:40] Failed to load config from "/home/zenmi/Projects/portfolio/dataconnect": could not find dataconnect.yaml in `/home/zenmi/Projects/portfolio/dataconnect`
+E1112 17:13:41.533728   30185 watch.go:40] Failed to load config from "/home/zenmi/Projects/portfolio/dataconnect": could not find dataconnect.yaml in `/home/zenmi/Projects/portfolio/dataconnect`
+E1112 17:13:51.542675   30185 watch.go:40] Failed to load config from "/home/zenmi/Projects/portfolio/dataconnect": could not find dataconnect.yaml in `/home/zenmi/Projects/portfolio/dataconnect`
+E1112 17:14:01.542617   30185 watch.go:40] Failed to load config from "/home/zenmi/Projects/portfolio/dataconnect": could not find dataconnect.yaml in `/home/zenmi/Projects/portfolio/dataconnect`
+E1112 17:14:11.533925   30185 watch.go:116] watchAllDir unable to walk dir `/home/zenmi/Projects/portfolio/dataconnect`: lstat /home/zenmi/Projects/portfolio/dataconnect: no such file or directory
+E1112 17:14:11.534027   30185 watch.go:40] Failed to load config from "/home/zenmi/Projects/portfolio/dataconnect": could not find dataconnect.yaml in `/home/zenmi/Projects/portfolio/dataconnect`
+E1112 17:14:21.543177   30185 watch.go:40] Failed to load config from "/home/zenmi/Projects/portfolio/dataconnect": could not find dataconnect.yaml in `/home/zenmi/Projects/portfolio/dataconnect`
+E1112 17:14:31.542633   30185 watch.go:40] Failed to load config from "/home/zenmi/Projects/portfolio/dataconnect": could not find dataconnect.yaml in `/home/zenmi/Projects/portfolio/dataconnect`
+E1112 17:14:41.533943   30185 watch.go:40] Failed to load config from "/home/zenmi/Projects/portfolio/dataconnect": could not find dataconnect.yaml in `/home/zenmi/Projects/portfolio/dataconnect`
+E1112 17:14:51.534506   30185 watch.go:40] Failed to load config from "/home/zenmi/Projects/portfolio/dataconnect": could not find dataconnect.yaml in `/home/zenmi/Projects/portfolio/dataconnect`
+E1112 17:15:01.538663   30185 watch.go:40] Failed to load config from "/home/zenmi/Projects/portfolio/dataconnect": could not find dataconnect.yaml in `/home/zenmi/Projects/portfolio/dataconnect`
+E1112 17:15:11.534030   30185 watch.go:116] watchAllDir unable to walk dir `/home/zenmi/Projects/portfolio/dataconnect`: lstat /home/zenmi/Projects/portfolio/dataconnect: no such file or directory
+E1112 17:15:11.534286   30185 watch.go:40] Failed to load config from "/home/zenmi/Projects/portfolio/dataconnect": could not find dataconnect.yaml in `/home/zenmi/Projects/portfolio/dataconnect`
+E1112 17:15:21.543164   30185 watch.go:40] Failed to load config from "/home/zenmi/Projects/portfolio/dataconnect": could not find dataconnect.yaml in `/home/zenmi/Projects/portfolio/dataconnect`
+E1112 17:15:31.542709   30185 watch.go:40] Failed to load config from "/home/zenmi/Projects/portfolio/dataconnect": could not find dataconnect.yaml in `/home/zenmi/Projects/portfolio/dataconnect`
+E1112 17:15:41.534092   30185 watch.go:40] Failed to load config from "/home/zenmi/Projects/portfolio/dataconnect": could not find dataconnect.yaml in `/home/zenmi/Projects/portfolio/dataconnect`
+E1112 17:15:51.542644   30185 watch.go:40] Failed to load config from "/home/zenmi/Projects/portfolio/dataconnect": could not find dataconnect.yaml in `/home/zenmi/Projects/portfolio/dataconnect`
+E1112 17:16:01.543910   30185 watch.go:40] Failed to load config from "/home/zenmi/Projects/portfolio/dataconnect": could not find dataconnect.yaml in `/home/zenmi/Projects/portfolio/dataconnect`
+E1112 17:16:11.534066   30185 watch.go:116] watchAllDir unable to walk dir `/home/zenmi/Projects/portfolio/dataconnect`: lstat /home/zenmi/Projects/portfolio/dataconnect: no such file or directory
+E1112 17:16:11.534163   30185 watch.go:40] Failed to load config from "/home/zenmi/Projects/portfolio/dataconnect": could not find dataconnect.yaml in `/home/zenmi/Projects/portfolio/dataconnect`
+E1112 17:16:21.543051   30185 watch.go:40] Failed to load config from "/home/zenmi/Projects/portfolio/dataconnect": could not find dataconnect.yaml in `/home/zenmi/Projects/portfolio/dataconnect`
+E1112 17:16:31.542125   30185 watch.go:40] Failed to load config from "/home/zenmi/Projects/portfolio/dataconnect": could not find dataconnect.yaml in `/home/zenmi/Projects/portfolio/dataconnect`
+E1112 17:16:41.534453   30185 watch.go:40] Failed to load config from "/home/zenmi/Projects/portfolio/dataconnect": could not find dataconnect.yaml in `/home/zenmi/Projects/portfolio/dataconnect`
+E1112 17:16:51.543057   30185 watch.go:40] Failed to load config from "/home/zenmi/Projects/portfolio/dataconnect": could not find dataconnect.yaml in `/home/zenmi/Projects/portfolio/dataconnect`
+E1112 17:17:01.534457   30185 watch.go:40] Failed to load config from "/home/zenmi/Projects/portfolio/dataconnect": could not find dataconnect.yaml in `/home/zenmi/Projects/portfolio/dataconnect`
+E1112 17:17:11.533813   30185 watch.go:116] watchAllDir unable to walk dir `/home/zenmi/Projects/portfolio/dataconnect`: lstat /home/zenmi/Projects/portfolio/dataconnect: no such file or directory
+E1112 17:17:11.534004   30185 watch.go:40] Failed to load config from "/home/zenmi/Projects/portfolio/dataconnect": could not find dataconnect.yaml in `/home/zenmi/Projects/portfolio/dataconnect`
+E1112 17:17:21.543259   30185 watch.go:40] Failed to load config from "/home/zenmi/Projects/portfolio/dataconnect": could not find dataconnect.yaml in `/home/zenmi/Projects/portfolio/dataconnect`
+E1112 17:17:31.542626   30185 watch.go:40] Failed to load config from "/home/zenmi/Projects/portfolio/dataconnect": could not find dataconnect.yaml in `/home/zenmi/Projects/portfolio/dataconnect`
+E1112 17:17:41.534204   30185 watch.go:40] Failed to load config from "/home/zenmi/Projects/portfolio/dataconnect": could not find dataconnect.yaml in `/home/zenmi/Projects/portfolio/dataconnect`
+E1112 17:17:51.542618   30185 watch.go:40] Failed to load config from "/home/zenmi/Projects/portfolio/dataconnect": could not find dataconnect.yaml in `/home/zenmi/Projects/portfolio/dataconnect`
+E1112 17:18:01.543822   30185 watch.go:40] Failed to load config from "/home/zenmi/Projects/portfolio/dataconnect": could not find dataconnect.yaml in `/home/zenmi/Projects/portfolio/dataconnect`
+E1112 17:18:11.535868   30185 watch.go:116] watchAllDir unable to walk dir `/home/zenmi/Projects/portfolio/dataconnect`: lstat /home/zenmi/Projects/portfolio/dataconnect: no such file or directory
+E1112 17:18:11.535958   30185 watch.go:40] Failed to load config from "/home/zenmi/Projects/portfolio/dataconnect": could not find dataconnect.yaml in `/home/zenmi/Projects/portfolio/dataconnect`
+E1112 17:18:21.544455   30185 watch.go:40] Failed to load config from "/home/zenmi/Projects/portfolio/dataconnect": could not find dataconnect.yaml in `/home/zenmi/Projects/portfolio/dataconnect`
+E1112 17:18:31.543419   30185 watch.go:40] Failed to load config from "/home/zenmi/Projects/portfolio/dataconnect": could not find dataconnect.yaml in `/home/zenmi/Projects/portfolio/dataconnect`
+E1112 17:18:41.533889   30185 watch.go:40] Failed to load config from "/home/zenmi/Projects/portfolio/dataconnect": could not find dataconnect.yaml in `/home/zenmi/Projects/portfolio/dataconnect`
+E1112 17:18:51.542613   30185 watch.go:40] Failed to load config from "/home/zenmi/Projects/portfolio/dataconnect": could not find dataconnect.yaml in `/home/zenmi/Projects/portfolio/dataconnect`
+E1112 17:19:01.541090   30185 watch.go:40] Failed to load config from "/home/zenmi/Projects/portfolio/dataconnect": could not find dataconnect.yaml in `/home/zenmi/Projects/portfolio/dataconnect`
+E1112 17:19:11.534233   30185 watch.go:116] watchAllDir unable to walk dir `/home/zenmi/Projects/portfolio/dataconnect`: lstat /home/zenmi/Projects/portfolio/dataconnect: no such file or directory
+E1112 17:19:11.535405   30185 watch.go:40] Failed to load config from "/home/zenmi/Projects/portfolio/dataconnect": could not find dataconnect.yaml in `/home/zenmi/Projects/portfolio/dataconnect`
+E1112 17:19:21.542645   30185 watch.go:40] Failed to load config from "/home/zenmi/Projects/portfolio/dataconnect": could not find dataconnect.yaml in `/home/zenmi/Projects/portfolio/dataconnect`
+E1112 17:19:31.541554   30185 watch.go:40] Failed to load config from "/home/zenmi/Projects/portfolio/dataconnect": could not find dataconnect.yaml in `/home/zenmi/Projects/portfolio/dataconnect`
+E1112 17:19:41.534140   30185 watch.go:40] Failed to load config from "/home/zenmi/Projects/portfolio/dataconnect": could not find dataconnect.yaml in `/home/zenmi/Projects/portfolio/dataconnect`
+E1112 17:19:51.543014   30185 watch.go:40] Failed to load config from "/home/zenmi/Projects/portfolio/dataconnect": could not find dataconnect.yaml in `/home/zenmi/Projects/portfolio/dataconnect`
+E1112 17:20:01.533974   30185 watch.go:40] Failed to load config from "/home/zenmi/Projects/portfolio/dataconnect": could not find dataconnect.yaml in `/home/zenmi/Projects/portfolio/dataconnect`
+E1112 17:20:11.533928   30185 watch.go:116] watchAllDir unable to walk dir `/home/zenmi/Projects/portfolio/dataconnect`: lstat /home/zenmi/Projects/portfolio/dataconnect: no such file or directory
+E1112 17:20:11.533990   30185 watch.go:40] Failed to load config from "/home/zenmi/Projects/portfolio/dataconnect": could not find dataconnect.yaml in `/home/zenmi/Projects/portfolio/dataconnect`
+E1112 17:20:21.543191   30185 watch.go:40] Failed to load config from "/home/zenmi/Projects/portfolio/dataconnect": could not find dataconnect.yaml in `/home/zenmi/Projects/portfolio/dataconnect`
+E1112 17:20:31.539103   30185 watch.go:40] Failed to load config from "/home/zenmi/Projects/portfolio/dataconnect": could not find dataconnect.yaml in `/home/zenmi/Projects/portfolio/dataconnect`
+E1112 17:20:41.534022   30185 watch.go:40] Failed to load config from "/home/zenmi/Projects/portfolio/dataconnect": could not find dataconnect.yaml in `/home/zenmi/Projects/portfolio/dataconnect`
+E1112 17:20:51.543279   30185 watch.go:40] Failed to load config from "/home/zenmi/Projects/portfolio/dataconnect": could not find dataconnect.yaml in `/home/zenmi/Projects/portfolio/dataconnect`
+E1112 17:21:01.533767   30185 watch.go:40] Failed to load config from "/home/zenmi/Projects/portfolio/dataconnect": could not find dataconnect.yaml in `/home/zenmi/Projects/portfolio/dataconnect`
+E1112 17:21:11.533847   30185 watch.go:116] watchAllDir unable to walk dir `/home/zenmi/Projects/portfolio/dataconnect`: lstat /home/zenmi/Projects/portfolio/dataconnect: no such file or directory
+E1112 17:21:11.534644   30185 watch.go:40] Failed to load config from "/home/zenmi/Projects/portfolio/dataconnect": could not find dataconnect.yaml in `/home/zenmi/Projects/portfolio/dataconnect`
+E1112 17:21:21.533799   30185 watch.go:40] Failed to load config from "/home/zenmi/Projects/portfolio/dataconnect": could not find dataconnect.yaml in `/home/zenmi/Projects/portfolio/dataconnect`
+E1112 17:21:31.543843   30185 watch.go:40] Failed to load config from "/home/zenmi/Projects/portfolio/dataconnect": could not find dataconnect.yaml in `/home/zenmi/Projects/portfolio/dataconnect`
+E1112 17:21:41.533953   30185 watch.go:40] Failed to load config from "/home/zenmi/Projects/portfolio/dataconnect": could not find dataconnect.yaml in `/home/zenmi/Projects/portfolio/dataconnect`
+E1112 17:21:51.533885   30185 watch.go:40] Failed to load config from "/home/zenmi/Projects/portfolio/dataconnect": could not find dataconnect.yaml in `/home/zenmi/Projects/portfolio/dataconnect`
+E1112 17:22:01.542630   30185 watch.go:40] Failed to load config from "/home/zenmi/Projects/portfolio/dataconnect": could not find dataconnect.yaml in `/home/zenmi/Projects/portfolio/dataconnect`
+E1112 17:22:11.534003   30185 watch.go:116] watchAllDir unable to walk dir `/home/zenmi/Projects/portfolio/dataconnect`: lstat /home/zenmi/Projects/portfolio/dataconnect: no such file or directory
+E1112 17:22:11.534134   30185 watch.go:40] Failed to load config from "/home/zenmi/Projects/portfolio/dataconnect": could not find dataconnect.yaml in `/home/zenmi/Projects/portfolio/dataconnect`
+E1112 17:22:21.542642   30185 watch.go:40] Failed to load config from "/home/zenmi/Projects/portfolio/dataconnect": could not find dataconnect.yaml in `/home/zenmi/Projects/portfolio/dataconnect`
+E1112 17:22:31.542820   30185 watch.go:40] Failed to load config from "/home/zenmi/Projects/portfolio/dataconnect": could not find dataconnect.yaml in `/home/zenmi/Projects/portfolio/dataconnect`
+E1112 17:22:41.534031   30185 watch.go:40] Failed to load config from "/home/zenmi/Projects/portfolio/dataconnect": could not find dataconnect.yaml in `/home/zenmi/Projects/portfolio/dataconnect`
+E1112 17:22:51.534554   30185 watch.go:40] Failed to load config from "/home/zenmi/Projects/portfolio/dataconnect": could not find dataconnect.yaml in `/home/zenmi/Projects/portfolio/dataconnect`
+E1112 17:23:01.542730   30185 watch.go:40] Failed to load config from "/home/zenmi/Projects/portfolio/dataconnect": could not find dataconnect.yaml in `/home/zenmi/Projects/portfolio/dataconnect`
+E1112 17:23:11.534101   30185 watch.go:116] watchAllDir unable to walk dir `/home/zenmi/Projects/portfolio/dataconnect`: lstat /home/zenmi/Projects/portfolio/dataconnect: no such file or directory
+E1112 17:23:11.534453   30185 watch.go:40] Failed to load config from "/home/zenmi/Projects/portfolio/dataconnect": could not find dataconnect.yaml in `/home/zenmi/Projects/portfolio/dataconnect`
+E1112 17:23:21.534194   30185 watch.go:40] Failed to load config from "/home/zenmi/Projects/portfolio/dataconnect": could not find dataconnect.yaml in `/home/zenmi/Projects/portfolio/dataconnect`
+E1112 17:23:31.533786   30185 watch.go:40] Failed to load config from "/home/zenmi/Projects/portfolio/dataconnect": could not find dataconnect.yaml in `/home/zenmi/Projects/portfolio/dataconnect`
+E1112 17:23:41.534251   30185 watch.go:40] Failed to load config from "/home/zenmi/Projects/portfolio/dataconnect": could not find dataconnect.yaml in `/home/zenmi/Projects/portfolio/dataconnect`
+E1112 17:23:51.543299   30185 watch.go:40] Failed to load config from "/home/zenmi/Projects/portfolio/dataconnect": could not find dataconnect.yaml in `/home/zenmi/Projects/portfolio/dataconnect`
+E1112 17:24:01.542671   30185 watch.go:40] Failed to load config from "/home/zenmi/Projects/portfolio/dataconnect": could not find dataconnect.yaml in `/home/zenmi/Projects/portfolio/dataconnect`
+E1112 17:24:11.534027   30185 watch.go:116] watchAllDir unable to walk dir `/home/zenmi/Projects/portfolio/dataconnect`: lstat /home/zenmi/Projects/portfolio/dataconnect: no such file or directory
+E1112 17:24:11.534100   30185 watch.go:40] Failed to load config from "/home/zenmi/Projects/portfolio/dataconnect": could not find dataconnect.yaml in `/home/zenmi/Projects/portfolio/dataconnect`
+E1112 17:24:21.542727   30185 watch.go:40] Failed to load config from "/home/zenmi/Projects/portfolio/dataconnect": could not find dataconnect.yaml in `/home/zenmi/Projects/portfolio/dataconnect`
+E1112 17:24:31.533752   30185 watch.go:40] Failed to load config from "/home/zenmi/Projects/portfolio/dataconnect": could not find dataconnect.yaml in `/home/zenmi/Projects/portfolio/dataconnect`
+E1112 17:24:41.534226   30185 watch.go:40] Failed to load config from "/home/zenmi/Projects/portfolio/dataconnect": could not find dataconnect.yaml in `/home/zenmi/Projects/portfolio/dataconnect`
+E1112 17:24:51.543449   30185 watch.go:40] Failed to load config from "/home/zenmi/Projects/portfolio/dataconnect": could not find dataconnect.yaml in `/home/zenmi/Projects/portfolio/dataconnect`
+E1112 17:25:01.543624   30185 watch.go:40] Failed to load config from "/home/zenmi/Projects/portfolio/dataconnect": could not find dataconnect.yaml in `/home/zenmi/Projects/portfolio/dataconnect`
+E1112 17:25:11.533956   30185 watch.go:116] watchAllDir unable to walk dir `/home/zenmi/Projects/portfolio/dataconnect`: lstat /home/zenmi/Projects/portfolio/dataconnect: no such file or directory
+E1112 17:25:11.534108   30185 watch.go:40] Failed to load config from "/home/zenmi/Projects/portfolio/dataconnect": could not find dataconnect.yaml in `/home/zenmi/Projects/portfolio/dataconnect`
+E1112 17:25:21.533856   30185 watch.go:40] Failed to load config from "/home/zenmi/Projects/portfolio/dataconnect": could not find dataconnect.yaml in `/home/zenmi/Projects/portfolio/dataconnect`
+E1112 17:25:31.534042   30185 watch.go:40] Failed to load config from "/home/zenmi/Projects/portfolio/dataconnect": could not find dataconnect.yaml in `/home/zenmi/Projects/portfolio/dataconnect`
+E1112 17:25:41.534024   30185 watch.go:40] Failed to load config from "/home/zenmi/Projects/portfolio/dataconnect": could not find dataconnect.yaml in `/home/zenmi/Projects/portfolio/dataconnect`
+E1112 17:25:51.542609   30185 watch.go:40] Failed to load config from "/home/zenmi/Projects/portfolio/dataconnect": could not find dataconnect.yaml in `/home/zenmi/Projects/portfolio/dataconnect`
+E1112 17:26:01.543770   30185 watch.go:40] Failed to load config from "/home/zenmi/Projects/portfolio/dataconnect": could not find dataconnect.yaml in `/home/zenmi/Projects/portfolio/dataconnect`
+E1112 17:26:11.534325   30185 watch.go:40] Failed to load config from "/home/zenmi/Projects/portfolio/dataconnect": could not find dataconnect.yaml in `/home/zenmi/Projects/portfolio/dataconnect`
+E1112 17:26:11.534185   30185 watch.go:116] watchAllDir unable to walk dir `/home/zenmi/Projects/portfolio/dataconnect`: lstat /home/zenmi/Projects/portfolio/dataconnect: no such file or directory
+E1112 17:26:21.543407   30185 watch.go:40] Failed to load config from "/home/zenmi/Projects/portfolio/dataconnect": could not find dataconnect.yaml in `/home/zenmi/Projects/portfolio/dataconnect`
+E1112 17:26:31.543221   30185 watch.go:40] Failed to load config from "/home/zenmi/Projects/portfolio/dataconnect": could not find dataconnect.yaml in `/home/zenmi/Projects/portfolio/dataconnect`
+E1112 17:26:41.534009   30185 watch.go:40] Failed to load config from "/home/zenmi/Projects/portfolio/dataconnect": could not find dataconnect.yaml in `/home/zenmi/Projects/portfolio/dataconnect`
+E1112 17:26:51.542640   30185 watch.go:40] Failed to load config from "/home/zenmi/Projects/portfolio/dataconnect": could not find dataconnect.yaml in `/home/zenmi/Projects/portfolio/dataconnect`
+E1112 17:27:01.542877   30185 watch.go:40] Failed to load config from "/home/zenmi/Projects/portfolio/dataconnect": could not find dataconnect.yaml in `/home/zenmi/Projects/portfolio/dataconnect`
+E1112 17:27:11.534328   30185 watch.go:116] watchAllDir unable to walk dir `/home/zenmi/Projects/portfolio/dataconnect`: lstat /home/zenmi/Projects/portfolio/dataconnect: no such file or directory
+E1112 17:27:11.534578   30185 watch.go:40] Failed to load config from "/home/zenmi/Projects/portfolio/dataconnect": could not find dataconnect.yaml in `/home/zenmi/Projects/portfolio/dataconnect`
+E1112 17:27:21.542615   30185 watch.go:40] Failed to load config from "/home/zenmi/Projects/portfolio/dataconnect": could not find dataconnect.yaml in `/home/zenmi/Projects/portfolio/dataconnect`
+E1112 17:27:31.543909   30185 watch.go:40] Failed to load config from "/home/zenmi/Projects/portfolio/dataconnect": could not find dataconnect.yaml in `/home/zenmi/Projects/portfolio/dataconnect`
+E1112 17:27:41.534599   30185 watch.go:40] Failed to load config from "/home/zenmi/Projects/portfolio/dataconnect": could not find dataconnect.yaml in `/home/zenmi/Projects/portfolio/dataconnect`
+E1112 17:27:51.543641   30185 watch.go:40] Failed to load config from "/home/zenmi/Projects/portfolio/dataconnect": could not find dataconnect.yaml in `/home/zenmi/Projects/portfolio/dataconnect`
+E1112 17:28:01.542767   30185 watch.go:40] Failed to load config from "/home/zenmi/Projects/portfolio/dataconnect": could not find dataconnect.yaml in `/home/zenmi/Projects/portfolio/dataconnect`
+E1112 17:28:11.533945   30185 watch.go:116] watchAllDir unable to walk dir `/home/zenmi/Projects/portfolio/dataconnect`: lstat /home/zenmi/Projects/portfolio/dataconnect: no such file or directory
+E1112 17:28:11.534186   30185 watch.go:40] Failed to load config from "/home/zenmi/Projects/portfolio/dataconnect": could not find dataconnect.yaml in `/home/zenmi/Projects/portfolio/dataconnect`
+E1112 17:28:21.543254   30185 watch.go:40] Failed to load config from "/home/zenmi/Projects/portfolio/dataconnect": could not find dataconnect.yaml in `/home/zenmi/Projects/portfolio/dataconnect`
+E1112 17:28:31.542693   30185 watch.go:40] Failed to load config from "/home/zenmi/Projects/portfolio/dataconnect": could not find dataconnect.yaml in `/home/zenmi/Projects/portfolio/dataconnect`

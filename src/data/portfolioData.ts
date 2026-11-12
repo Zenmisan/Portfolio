@@ -8,6 +8,9 @@ export interface Project {
   techStack: string[];
   liveUrl?: string;
   githubUrl?: string;
+  githubLabel?: string;
+  secondaryUrl?: string;
+  secondaryLabel?: string;
   year: string;
 }
 
@@ -63,6 +66,7 @@ export const portfolioData = {
         'Rust',
         'Go',
         'Kotlin',
+        'Swift',
         'C#',
         'C++',
         'Java',
@@ -77,6 +81,7 @@ export const portfolioData = {
         'Flutter',
         'Next.js',
         'Vite',
+        'QML',
         'Tailwind CSS',
         'HTML5',
         'CSS3',
@@ -90,6 +95,7 @@ export const portfolioData = {
         'Git',
         'CI/CD',
         'Bun',
+        'systemd',
         'Supabase',
         'PowerShell',
         'Windows',
@@ -134,6 +140,36 @@ export const portfolioData = {
       ],
       liveUrl: 'https://z-cycles.web.app',
       githubUrl: 'https://github.com/Zenmisan/Cycle',
+    },
+    {
+      id: 'netledger',
+      title: 'NetLedger',
+      category: 'Network Telemetry & Systems Daemon',
+      status: 'Active',
+      year: '2024 | Present',
+      summary:
+        'A system-wide process-lineage network bandwidth ledger and mobile hotspot guardian engineered for Linux (Omarchy / Quickshell status bar plugin) and macOS Monterey+ (native Menu Bar app & launchd daemon).',
+      highlights: [
+        'Upward process lineage attribution: walks /proc stat & cgroups (Linux) and Darwin nettop (macOS) to attribute worker traffic (curl, git, package managers, browser helpers) to human-meaningful parent applications.',
+        'Strict privilege separation: background daemons (netledgerd on systemd / macnetledgerd on launchd) record atomic packet deltas to SQLite in WAL mode; unprivileged UIs query historical rollups with sub-3ms latency.',
+        'Dual-tier time-series rollups: 5-minute buckets retained for 14 days and 1-hour buckets retained for 400+ days, with custom sparkline histograms and dual-segment proportional rate bars (Cyan down / Amber up).',
+        'Hotspot guardian on macOS: auto-detects personal hotspot connections, tags cellular usage, and guarantees zero data loss across laptop lid sleep with atomic 2s WAL commits.',
+      ],
+      techStack: [
+        'Python',
+        'Swift',
+        'QML',
+        'Quickshell',
+        'SQLite',
+        'systemd',
+        'launchd',
+        'Linux',
+        'macOS',
+      ],
+      githubUrl: 'https://github.com/Zenmisan/NetLedger',
+      githubLabel: 'Omarchy / Linux Repo',
+      secondaryUrl: 'https://github.com/Zenmisan/MacNetLedger',
+      secondaryLabel: 'macOS Repo',
     },
     {
       id: 'manga-dl',
